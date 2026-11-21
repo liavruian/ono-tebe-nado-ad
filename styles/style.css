@@ -30,7 +30,7 @@
 
 .header__link {
     text-decoration: none;
-    border-bottom: 1px solid var(--black);  
+    border-bottom: 1px solid var(--black);
     padding-right: 3px;
     text-transform: lowercase;
     font-size: 18px;
@@ -39,6 +39,7 @@
 
 .header__link_active {
     text-decoration: none;
+    border-bottom: none;
     padding-right: 0;
 }
 
@@ -128,6 +129,7 @@
 .aligned-text_right {
     text-align: right;
     line-height: 1.35;
+    margin-right: -0.3em;
 }
 
 .cover__description {
@@ -279,7 +281,10 @@
 
 /* --- Footer --- */
 .footer {
-    padding: 156px 50px 82px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    padding: 181px 50px 82px;
 }
 
 .footer__address {
@@ -291,6 +296,12 @@
 }
 
 .footer__menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     gap: 0;
 }
 
